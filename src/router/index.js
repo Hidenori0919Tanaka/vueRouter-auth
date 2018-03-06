@@ -1,21 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Top from '@/components/Top'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
-import Login from '@/components/Login'
+import SignIn from '@/components/SignIn'
 import Auth from '@/components/Auth'
 
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [
-    //{
-    //  path: '/',
-    //  name: 'HelloWorld',
-    //  component: HelloWorld
-    //},
     {
       path: '/',
       name: 'Top',
@@ -32,9 +27,9 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/Login',
-      name: 'Login',
-      component: Login
+      path: '/SignIn',
+      name: 'SignIn',
+      component: SignIn
     },
     {
       path: '/Auth',

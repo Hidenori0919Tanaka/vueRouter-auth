@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <div class="header">
+      <nav>
+        <router-link to="/" exact>Top</router-link>
+        <router-link to="/About">About</router-link>
+        <router-link to="/Contact">Contact</router-link>
+        <router-link to="/SignIn">SignIn</router-link>
+      </nav>
+    </div>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
